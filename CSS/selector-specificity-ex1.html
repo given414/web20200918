@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- html>head>style^body>h1^ -->
+<html>
+<head>
+    <style>
+        #myheader {
+            color:rosybrown;
+        }
+        /* id로 명시하는게 가장 먼저 적용 (우선도 상) */
+        h1.my.your {
+            color: black;
+        }
+        .my.your{
+            color:pink;
+        }
+
+        h1.my {
+            color:gold;
+        }
+
+        .my{
+            color:blue;
+        }
+        /* 조건을 더욱 구체척으로 선택하는경우 우선적용 (우선도 중) */
+
+        h1 {
+            color:red;
+        }
+        h1 {
+            color:yellow;
+        }
+        /* 조건이 같은경우 아래쪽이먼저적용 (우선도 하) */
+    </style>
+</head>
+<body>
+    
+    <h1 style="color:chocolate;" class="my your" id="myheader">Lorem ipsum dolor sit amet.</h1>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .my-menu {
+            display: flex;
+            background-color: green;
+            height: 80px;
+            align-items: center;
+        }
+        .menu-item {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 25px 10px;
+        }
+        .menu-item:hover {
+            color: black;
+            background-color: #fff;
+        }
+        #dummy {
+            flex: 1;
+        }
+        .main-container {
+            margin-top:30px;
+            display:flex;
+        }
+
+        .main-container > div{
+            border:5px solid black;
+        }
+
+
+        .side-menu {
+            width:200px;
+        }
+
+        .main-content {
+            flex:1;
+        }
+        .ad-container {
+            width:200px;
+        }
+        .sub-menu {
+            position : absolute;
+            display:none;
+            top:80px;
+            left:0px;
+            padding:10px;
+            background-color:white;
+            border-top: 5px solid green;
+        }
+        .menu-item {
+            position:reative;
+        }
+        .menu-item:hover .sub-menu {
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-menu">
+        <div class="sub-menue">
+            <div class="sub-item">Lorem.</div>
+            <div class="sub-item">Ipsa.</div>
+            <div class="sub-item">Itaque.</div>
+            <div class="sub-item">Rem.</div>
+            <div class="sub-item">Non.</div>
+        </div>
+    </div>
+        <div class="menu-item">TUTORIALS <i class="fas fa-caret-down"></i></div>
+        <div class="menu-item">REFERENCES <i class="fas fa-caret-down"></i></div>
+        <div class="menu-item">EXAMPLES <i class="fas fa-caret-down"></i></div>
+        <div class="menu-item">EXERCIES <i class="fas fa-caret-down"></i></div>
+        <div id="dummy"></div>
+        <div class="menu-item"><i class="fas fa-adjust"></i></div>
+        <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
+        <div class="menu-item"><i class="fas fa-search"></i></div>
+    </div>
+
+    <div class="main-contatiner">
+        <div class="side-menu">
+            div
+        </div>
+
+    </div>
+</body>
+</html>
