@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>      
     </style>
@@ -16,6 +17,25 @@
         console.log('on');
         document.getElementById("img1").src = "pic_bulbon.gif";
     }
+=======
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <img id="img1" onmouseout="off()"  onmouseover="on()" src="pic_bulboff.gif" alt="">
+
+    <script>
+        function on() {
+            // console.log('on');
+            document.getElementById("img1").src = 'pic_bulbon.gif'
+        }
+
+        function off() {
+            document.getElementById("img1").src = 'pic_bulboff.gif'
+        }
+>>>>>>> c481395b9339ac8b839d9d08cde9f0a32aa9aebe
     </script>
 </body>
 </html>
