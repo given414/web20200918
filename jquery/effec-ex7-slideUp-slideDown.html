@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #panel, #flip {
+            padding:5px;
+            text-align: center;
+            background-color:burlywood;
+            border: solid 1px #c3c3c3;
+        }
+        #panel{
+            display:none;
+        }
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function(){
+                $("#pnnel").slideDown('slow');
+            });
+            $("#flip").click(function(){
+                $("#pannel").slideUp('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+  <div id="flip">Click Here!</div>
+  <div id="pannel">Hello world!</div>
+</body>
+</html>
